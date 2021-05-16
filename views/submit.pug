@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts 
+   
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&family=Signika&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet")
+    
+	
+    
+    
+block style 
+    style 
+        include ../static/volunteer.css
+        include ../static/submit.css
+
+block content 
+    nav#navbar
+        section#left 
+            | The Sparks Foudation
+        
+        ul 
+        
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About Us ]
+            li #[a(href="/gallery") Gallery ]
+            li #[a(href="/volunteer") Want To Be Volunteer]
+
+    div "Your form has been submitted successfully!!"
+    div   Thank you for joining with us....

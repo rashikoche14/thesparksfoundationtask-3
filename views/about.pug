@@ -1,0 +1,79 @@
+extends base.pug
+
+block scripts 
+    
+    script(src='https://kit.fontawesome.com/79baca8388.js' crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet")
+    
+block style 
+    style 
+        include ../static/volunteer.css
+        include ../static/about.css
+
+block content 
+    nav#navbar
+        section#left 
+            | The Sparks Foudation
+         
+        ul 
+        
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About Us ]
+            li #[a(href="/gallery") Gallery ]
+            li #[a(href="/volunteer") Want To Be Volunteer]
+    div#about
+        div#section1
+            i(class='fas fa-smile fa-2x')  ABOUT US
+        div#section2 
+            i How It Started !!
+            div.about Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quia, saepe blanditiis facilis minus quisquam vitae a dolorum architecto animi ullam veritatis, sequi perferendis est deserunt nam libero quam nisi autem error modi, quo debitis ipsam. Molestias, recusandae quae dolores numquam iure perspiciatis asperiores deserunt? Inventore, pariatur dolorum adipisci temporibus, possimus distinctio vel consectetur magnam fugiat neque doloremque, illum soluta ex fugit deserunt vero tempora veniam. Provident, pariatur nam numquam assumenda quo repellendus asperiores ut impedit, aliquid atque, minus dolorum possimus distinctio sit beatae. Sunt voluptatum similique debitis placeat suscipit eum voluptate tempora vitae temporibus, optio odio quidem corrupti porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. At aspernatur tempore numquam error quod officiis fuga? Corporis facilis repellendus delectus expedita error, earum accusamus quas neque nulla doloremque ab modi beatae deleniti aperiam officia, laboriosam dolor quae non fugiat veritatis eveniet nostrum nesciunt. Blanditiis optio quis deleniti aut illo eius, inventore delectus, fugit dolores officia a debitis rerum! Assumenda soluta labore pariatur facere alias fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sunt libero mollitia quae corrupti maiores laboriosam iure aut modi autem porro excepturi in corporis culpa, ipsam dolores debitis eum velit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ut quibusdam debitis odio sed ex sequi ipsa nulla accusamus quo incidunt enim, necessitatibus recusandae obcaecati reiciendis officiis quos maiores quas! 
+
+            i How It's Going !!
+
+            section(class="section")
+                div(class="paras")
+                    p(class="sectionTag text-big") Our Running Projects 
+                    p(class="sectionSubTag text-small") Education in India is primarily provided by public schools (controlled
+                        |and funded by the government at three levels: central, state and local) and private schools. Under
+                        |various articles of the Indian Constitution, free and compulsory education is provided as a fundamental
+                        |right to children aged 6 to 14. The approximate ratio of public schools to private schools in India is
+                        |7:5. Major policy initiatives in Indian education are numerous. Up until 1976, education policies and
+                        |implementation were determined legally by each of India’s constitutional states. The 42nd amendment to
+                        |the constitution in 1976 made education a ‘concurrent subject’.
+    
+                div(class="thumbnail")
+                    img(src="https://source.unsplash.com/1600x1600/?donation,wildlife ,tiger,elephant" alt="wildlife" class="imgFluid")
+                
+       
+            section(class="section section-left")
+                div(class="paras")
+                    p(class="sectionTag text-big") Animals Who Are Rescued By Us
+                    p(class="sectionSubTag text-small") Education in India is primarily provided by public schools (controlled
+                        |and funded by the government at three levels: central, state and local) and private schools. Under
+                        |various articles of the Indian Constitution, free and compulsory education is provided as a fundamental
+                        |right to children aged 6 to 14. The approximate ratio of public schools to private schools in India is
+                        |7:5. Major policy initiatives in Indian education are numerous. Up until 1976, education policies and
+                        |implementation were determined legally by each of India’s constitutional states. The 42nd amendment to
+                        |the constitution in 1976 made education a ‘concurrent subject’.
+    
+                div(class="thumbnail")
+                    img(src="https://source.unsplash.com/1000x1600/?charity,animals,humans" alt="wildlife" class="imgFluid")
+       
+            section(class="section")
+                div(class="paras")
+                    p(class="sectionTag text-big") Our volunteers Get Honoured For Their Work
+                    p(class="sectionSubTag text-small") Education in India is primarily provided by public schools (controlled
+                        |and funded by the government at three levels: central, state and local) and private schools. Under
+                        |various articles of the Indian Constitution, free and compulsory education is provided as a fundamental
+                        |right to children aged 6 to 14. The approximate ratio of public schools to private schools in India is
+                        |7:5. Major policy initiatives in Indian education are numerous. Up until 1976, education policies and
+                        |implementation were determined legally by each of India’s constitutional states. The 42nd amendment to
+                        |the constitution in 1976 made education a ‘concurrent subject’.
+
+                div(class="thumbnail")
+                    img(src="https://source.unsplash.com/1000x1600/?humans,trophies" alt="wildlife" class="imgFluid")
+
+    footer#footer 
+            |Copyright &copy ;2027-TheSparksFoundationCharity.com-All rights are reserved   

@@ -1,0 +1,60 @@
+extends base.pug
+
+block scripts 
+    
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&family=Signika&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet")
+    
+    
+block style 
+    style 
+        include ../static/volunteer.css
+        include ../static/gallery.css
+
+block content 
+    nav#navbar
+        section#left 
+            | The Sparks Foudation
+        
+        ul 
+        
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About Us ]
+            li #[a(href="/gallery") Gallery ]
+            li #[a(href="/volunteer") Want To Be Volunteer]
+
+   
+    section#gallery
+        div.slider 
+            div.images 
+                input(type='radio' name='slide' id='img1' checked)
+                input(type='radio' name='slide' id='img2')
+                input(type='radio' name='slide' id='img3')
+                input(type='radio' name='slide' id='img4')
+                input(type='radio' name='slide' id='img5')
+                input(type='radio' name='slide' id='img6')
+                img(src='../static/img/slide1.jpg' class='m1' alt='img1' style='width:100%;height:100%;') 
+                img(src='../static/img/slide2.jpg' class='m2' alt='img2' style='width:100%;height:100%;')
+                img(src='../static/img/slide3.jpg' class='m3' alt='img3' style='width:100%;height:100%;')
+                img(src='../static/img/slide4.jpg' class='m4' alt='img4' style='width:100%;height:100%;')
+                img(src='../static/img/slide5.jpg' class='m5' alt='img5' style='width:100%;height:100%;')
+                img(src='../static/img/slide6.jpg' class='m6' alt='img6' style='width:100%;height:100%;')
+        
+            div.dots 
+                label(for='img1')
+                label(for='img2')
+                label(for='img3')
+                label(for='img4')
+                label(for='img5')
+                label(for='img6')
+
+    footer#footer 
+            |Copyright &copy ;2027-TheSparksFoundationCharity.com-All rights are reserved   
+
+
+
+

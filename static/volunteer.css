@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:600px;
+    padding:10px ;
+}
+#navbar{
+    background-color:black;
+    background-size: cover;
+    background-blend-mode:lighten;
+    display:flex;
+    flex-direction: column;
+}
+#navbar li{
+    list-style: none;
+    margin:0px 15px;
+}
+#navbar li a{
+    color:white;
+    font-size:23px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:5px 15px;
+    margin:10px;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar li a:hover{
+    background-color:white;
+    border-radius: 5px; 
+    color:black;
+}
+#left{
+    color:yellow;
+    font-size:25px;
+    margin-top:10px;
+    margin-left: 10px;
+    border-bottom:solid;
+    border-bottom-color: yellow;
+    font-family: 'Baloo 2', cursive;
+    width: fit-content;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    padding-top:20px;
+    font-size:45px;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    padding:15px;
+    font-size: 30px;
+}
+.myForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.myInput{
+    width:600px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius:4px;
+    outline: none;
+    font-size: 18px;
+}
+.myInput:hover{
+    color:yellow;
+    background-color: rgb(0, 0, 0);
+}
+#volunteer{
+    background: center/cover no-repeat url("/static/img/join1.jpg");
+    height:730px;
+  
+}
+::placeholder{
+    color:rgb(185, 2, 87);
+    text-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+#btn {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    width: 195px;
+    border:3px solid black;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight:bold;
+    background-color: transparent;
+}
+#btn:hover{
+    background-color:white;
+    border:3px solid white;
+    border-radius: 20px;
+    color:rgb(93, 223, 7);
+}
+#btn a{
+    text-decoration: none;
+    color:black;
+}
+#footer{
+    height:50px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:12px;
+    font-size: 19px;
+}
+
+
+@media screen and (max-width: 1378px) 
+{ #navbar ul{
+    margin-left:0px;
+}
+#volunteer{
+ height:100rem;
+}
+}

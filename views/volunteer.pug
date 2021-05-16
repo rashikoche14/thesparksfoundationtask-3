@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts 
+    
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&family=Signika&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet")
+    
+	
+    
+    
+block style 
+    style 
+        include ../static/volunteer.css
+
+block content 
+    nav#navbar
+        section#left 
+            | The Sparks Foudation
+        
+        ul 
+        
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About Us ]
+            li #[a(href="/gallery") Gallery ]
+           
+            li #[a(href="/volunteer") Want To Be Volunteer]
+    
+    section#volunteer
+
+        h1  WELCOME 
+        h2 "Join Our Family"
+        form(action="/volunteer",method="post",class="myForm")
+            input(type="text",class="myInput",name="name",placeholder="Enter your name:")
+            input(type="phone",class="myInput",name="phone",placeholder="Enter your phone number:")
+            input(type="email",class="myInput",name="email",placeholder="Enter your email:")
+            input(type="age",class="myInput",name="age",placeholder="Enter your age:")
+            input(type="text",class="myInput",name="address",placeholder="Enter your address:")
+            textarea(type="text",class="myInput",name="desc",cols="20" rows="4" ,placeholder="Your motto to join our foundation :")
+            button#btn #[a(href="/submit") SUBMIT]
+
+
+    footer#footer 
+            |Copyright &copy ;2027-TheSparksFoundationCharity.com-All rights are reserved   
+ 
+            

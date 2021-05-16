@@ -1,0 +1,94 @@
+extends base.pug
+
+
+block scripts 
+    
+    script(src='https://kit.fontawesome.com/79baca8388.js' crossorigin='anonymous')
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&family=Signika&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet")
+    
+    
+    
+block style 
+    style
+       include ../static/style.css
+        
+
+block content
+    nav#navbar
+        section#left 
+            | The Sparks Foudation
+        
+        ul 
+        
+            li #[a(href="/") Home ]
+            li #[a(href="/about") About Us ]
+            li #[a(href="/gallery") Gallery ]
+            li #[a(href="/volunteer") Want To Be Volunteer ]
+
+        section#introSection
+            div#matter
+                div#one Welcome To The Family!! 
+                div#two    We Are Glad To Have You Here..
+                div#three "Please Donate For Making World Better."
+            button#btn  #[a(href="https://rzp.io/l/4K4f96zfKM") Donate Now]
+    
+    section#sponsorsSection 
+        div#head 
+            |SO FAR WE ACHIEVED :)
+        div.para Adding more and more achievements to our journey is very soothingg.Achievements for us is like a happines  to needy one and makes everyones day.Everyone is working so hard 
+        div.para and dedicated to their work.Let's hope we can achieve many more success and spread more love and happines and able to create some diiffrence in the world.
+        div.para Really happy to share our few success with you all it only happens because of your support keep supporting... 
+
+        div#icons
+            i(class='fas fa-hand-point-right fa-x')  :2578
+                div.below PROJECT COMPLETED
+            i(class='fas fa-rupee-sign fa-x')  :874800
+                div.below FUNDS
+            i(class='fas fa-heart fa-x')  :1845
+                div.below     VOLUNTEERS
+            i(class='fas fa-hand-holding-heart fa-x')  :4974
+                div.below DONORS
+
+
+    footer#footer 
+        section#box1 
+            div.up 
+                |ABOUT CHARITIZE
+            div#up1
+                div Who we are 
+                div Meet the team 
+                div Media center 
+                div Contact Us 
+                div FAQ
+
+        section#box2
+            div.up
+                | DONATIONS
+            div#up2
+                div How To Donate  
+                div Donation List 
+                div FAQ 
+
+        section#box3 
+            div.up
+                |RECENT TWEETS
+            div#up3
+                div 30 Tigers Were Rescued From A Zoo 
+                div The Sparks Foundation Did Photoshoot For Their Campaign 
+                div 
+                div 5 months ago
+        section#box4
+            div.up
+                |GET CONNECTED
+            div#up4
+                i(class='fas fa-map-marker-alt fa-x')  123 colony street no.5,Mumbai(Maharashtra)
+                i(class='fas fa-phone-alt')  9009-9-9009
+                i(class='fas fa-envelope')  xyz25@gmail.com
+                i(class='fab fa-instagram')  spraks_charity25
+                i(class='fab fa-facebook')  thesparkscharity.facebook.com
+                i(class='fab fa-twitter')  @sparkscharity

@@ -1,0 +1,237 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left:600px;
+    padding:10px ;
+}
+#navbar{
+    background: rgba(0,0,0,0) url("/static/img/bg5.jpg");
+    background-size: cover;
+    background-blend-mode:lighten;
+    display:flex;
+    flex-direction: column;
+}
+#navbar li{
+    list-style: none;
+    margin:0px 15px;
+}
+#navbar li a{
+    color:white;
+    font-size:25px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:1px 15px;
+    margin:10px;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar li a:hover{
+    background-color:white;
+    border:3px solid grey;
+    border-radius:10px;
+    color:black;
+}
+#introSection{
+    content:"";
+    display: flex;
+    flex-direction: column;
+    font-size:60px;
+    height:750px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+#left{
+    color:yellow;
+    font-size:25px;
+    margin:10px 10px;
+    font-family: 'Itim', cursive;
+}
+#the{
+    margin:20px 10px;
+}
+#matter{
+    margin-right:650px;
+}
+#one{
+    color:#0afe0a;
+    font-size:25px;
+    margin-bottom:10px;
+    text-shadow:4px 2px 4px black;
+}
+#two{
+    color:white;
+    font-size:30px;
+    margin-bottom:10px;
+    text-shadow:2px 2px 2px black;
+}
+#three{
+    color:white;
+    margin-bottom:10px;
+    text-shadow:2px 2px 2px black;
+    font-size:40px;
+}
+#btn{
+    padding:10px 40px;
+    background-color :#005f13;
+    border:4px solid black;
+    border-radius: 10px;
+    color:white;
+    margin-right:1130px;
+    font-size:25px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}
+#btn a{
+    text-decoration: none;
+    color:black;
+}
+#btn:hover{
+    background-color: rgb(109, 250, 116);
+    color:black;
+}
+#sponsorsSection {
+    height:390px;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+}
+.para{
+    font-family: 'Signika', sans-serif;
+}
+#head{
+    margin:30px 10px;
+    font-size: 37px;
+    font-weight: bold;
+    color:rgb(126, 9, 63);
+    font-family: 'Signika', sans-serif;
+}
+#icons{
+    height:300px;
+}
+#icons i{
+    margin:45px 65px ;
+    font-size: 30px;
+    padding:25px 25px ;
+}
+.below{
+    font-size:18px;
+    margin:18px;
+    color:black;
+}
+#footer{
+   height:310px;
+   background-color: olivedrab;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+#box1{
+    background-color:transparent;
+    height: 270px;
+    width:20%;
+}
+#up1{
+    padding:3px;
+    margin-left:21px;
+}
+#up1 div{
+    padding:2px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Signika', sans-serif;
+}
+.up{
+    margin:25px;
+    padding-bottom: 4px;
+    font-size:20px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    width: fit-content;
+    border-bottom-color: white;
+    color:white;
+    font-family: 'Baloo 2', cursive;
+}
+#box2{
+    width: 20%;
+    height: 270px;
+}
+#up2{
+    padding:3px;
+    margin-left:21px;
+    font-weight: bold;
+}
+#up2 div{
+    padding:2px;
+    font-size: 17px;
+    font-family: 'Signika', sans-serif;
+}
+#box3{
+    width: 30%;
+    height: 270px;
+}
+#up3{
+    padding:3px;
+    margin-left:21px;
+    font-weight: bold;
+}
+#up3 div{
+    padding:2px;
+    font-size: 17px;
+    font-family: 'Signika', sans-serif;
+}
+#box4{
+    width: 30%;
+    height: 270px;
+}
+#up4{
+    padding:3px;
+    margin-left:21px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+#up4 i{
+    padding:3px;
+    margin: 3px;
+}
+#up4 div{
+    padding:2px;
+    font-size: 17px;
+    font-family: 'Signika', sans-serif;
+}
+
+@media screen and (max-width: 1416px) {
+#navbar ul{
+    margin-left: 0px;
+}
+#matter{
+    margin-right: 0px;
+}
+#btn{
+    margin-right: 0px;
+    font-size: 30px;
+    margin-top:20px;
+}
+#icons i{
+    margin:20px 70px;
+}
+#sponsorsSection{
+    height:38rem;
+}
+.para{
+    font-size:20px;
+}
+.below{
+    font-size: 21px;
+}
+}
